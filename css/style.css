@@ -285,7 +285,7 @@ button:hover {
     display: flex;
     width: 80%;
     flex-direction: column;
-    margin: 11rem auto 15rem auto;
+    margin: 4rem auto 15rem auto;
     justify-content: center;
   }
 
