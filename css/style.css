@@ -297,7 +297,12 @@ button:hover {
 
   .intro .head_line h1 {
     font-size: 3rem;
-    /* text-align: center; */
+    line-height: 3.3rem;
+    margin-bottom: 1rem;
+  }
+
+  form input {
+    margin-bottom: 1rem;
   }
 
   .intro .schadule_2 {
