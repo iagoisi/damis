@@ -1,0 +1,270 @@
+:root {
+  --text-color: #333;
+  --subtitle-and-desctiption: #999;
+  --dark-blue: #1B476B;
+  font-size: 62.5%;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Roboto;
+}
+
+html::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 90vh;
+  background: var(--dark-blue);
+  margin-right: 3rem;
+
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+}
+
+.intro {
+  display: flex;
+  margin: 11rem auto 15rem auto;
+  gap: 2rem;
+  max-width: 90%;
+}
+
+.intro .schadule {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.intro .head_line {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.intro .head_line h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: .2rem;
+  line-height: 4.3rem;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  color: var(--text-color);
+}
+
+.intro .head_line h2 {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  max-width: 380px;
+  margin-bottom: 1rem;
+  color: var(--subtitle-and-desctiption);
+}
+
+.intro .head_line h2 span {
+  line-height: 1.9rem;
+  background: yellow;
+  padding: .1rem;
+}
+
+.intro .schadule_2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.intro .schadule_2 img {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 588px;
+  gap: 1rem;
+}
+
+form input {
+  padding: 1rem;
+  border: 2px solid rgb(68, 68, 61);
+  height: 77px;
+}
+
+form input::placeholder {
+  font-family: Roboto;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+}
+
+input:hover {
+  border: solid 3px #00639A;
+}
+
+input:focus {
+  outline: none;
+  border: solid 3px #00639A;
+}
+
+button {
+  height: 77px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: Roboto;
+  letter-spacing: .2rem;
+  background: #00639A;
+  color: white;
+}
+
+button:hover {
+  box-shadow: #333;
+}
+
+/* ---------- SECTION_01 ---------- */
+
+
+.section_01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+.section_01 img {
+  width: 134px;
+  margin-bottom: 5rem;
+}
+
+.section_01 p {
+  color: var(--subtitle-and-desctiption);
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  max-width: 850px;
+}
+
+/* ---------- SECTION_02 ---------- */
+
+.section_02 {
+  display: flex;
+  margin-bottom: 15rem;
+}
+
+.section_02 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.section_02 ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  margin-bottom: 5rem;
+}
+
+.section_02 ul li p {
+  color: var(--subtitle-and-desctiption);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.section_02 ul li img {
+  margin-bottom: 3rem;
+}
+
+.section_02 ul li:first-child img {
+  width: 141px;
+}
+
+.section_02 ul li:nth-child(2) img {
+  width: 141px;
+}
+
+.section_02 ul li:nth-child(3) img {
+  width: 105px;
+}
+
+
+/* ---------- SECTION_03 ---------- */
+
+.section_03 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 20rem;
+}
+
+.section_03 .description_consult h2 {
+  font-weight: 500;
+  font-size: 3.6rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.section_03 .description_expert {
+  display: flex;
+  align-items: flex-end;
+}
+
+.section_03 .description_consult p {
+  font-size: 2.2rem;
+  color: var(--subtitle-and-desctiption);
+  max-width: 400px;
+  line-height: 3.4rem;
+}
+
+.section_03 .description_expert::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: var(--dark-blue);
+  margin-right: 6rem;
+}
+
+
+.section_03 .description_expert p {
+  max-width: 290px;
+  font-size: 2.2rem;
+  color: var(--subtitle-and-desctiption);
+  line-height: 3.4rem;
+  margin-right: 2rem;
+}
+
+.section_03 .description_expert img {
+  width: 221px;
+}
+
+/* ---------- LOGO ---------- */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9rem;
+}
+
+.logo img {
+  width: 300px;
+
+}
