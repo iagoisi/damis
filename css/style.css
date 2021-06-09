@@ -2,6 +2,8 @@
   --text-color: #333;
   --subtitle-and-desctiption: #999;
   --dark-blue: #1B476B;
+  --color-background-card: #EBEBEB;
+  --color-white: #fff;
   font-size: 62.5%;
 
 }
@@ -257,11 +259,117 @@ button:hover {
   width: 221px;
 }
 
+
+
+/* ---------- SECTION_04 ---------- */
+
+.section_04 {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: var(--dark-blue);
+  margin-bottom: 15rem;
+
+}
+
+.schadule_section_04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 9rem auto;
+}
+
+.section_04 h2 {
+  display: flex;
+  margin: 0 auto 6rem auto;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+
+.business_group_01 {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 0 auto;
+  margin-bottom: 5rem;
+}
+
+.business_group_01 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 294.5px;
+  height: 188px;
+  background: var(--color-background-card);
+  box-shadow: 3px 5px 2px #000;
+}
+
+.business_group_01 div:nth-child(1) img {
+  width: 50%;
+}
+
+.business_group_01 div:nth-child(2) img {
+  width: 60%;
+}
+
+.business_group_01 div:nth-child(3) img {
+  width: 70%;
+}
+
+.business_group_01 div:nth-child(4) img {
+  width: 40%;
+}
+
+
+
+.business_group_02 {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto 0 0;
+}
+
+.business_group_02 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 294.5px;
+  height: 188px;
+  background: var(--color-background-card);
+  box-shadow: 3px 5px 2px #000;
+}
+
+.business_group_02 div:nth-child(1) img {
+  width: 40%;
+}
+
+.business_group_02 div:nth-child(2) img {
+  width: 60%;
+}
+
+.business_group_02 div:nth-child(3) img {
+  width: 60%;
+}
+
+.business_group_02 div:nth-child(4) img {
+  width: 70%;
+}
+
+
+
 /* ---------- LOGO ---------- */
 .logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
 }
 
 .logo img {
@@ -324,19 +432,19 @@ button:hover {
     justify-content: center;
   }
 
-/* ---------- SECTION_1 ---------- */
+/* ---------- SECTION_02 ---------- */
 
   .section_01 p {
     max-width: 90%;
   }
 
-/* ---------- SECTION_2 ---------- */
+/* ---------- SECTION_02 ---------- */
 
   .section_02 p {
     width: 90%;
   }
 
-/* ---------- SECTION_3 ---------- */
+/* ---------- SECTION_03 ---------- */
 
   .section_03 {
     flex-direction: column;
@@ -361,5 +469,21 @@ button:hover {
   .section_03 .description_expert::before {
     display: none;
   }
+
+/* ---------- SECTION_04 ---------- */
+
+
+  .business_group_01 {
+    margin: 0 auto;
+    justify-content: center;
+    /* margin-bottom: 5rem; */
+  }
+
+  .business_group_02 {
+    margin: 0 auto;
+    justify-content: center;
+
+  }
+
 
 }
