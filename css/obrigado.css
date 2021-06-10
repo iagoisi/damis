@@ -51,13 +51,14 @@ h2 {
   width: 100%;
   height: 100vh;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: solid 40px var(--dark-blue);
 }
 
 .text img {
   width: 10%;
-  margin: 2rem auto 1rem 0;
+  margin: 0rem auto 1rem 0;
 }
 
 .instructions {
