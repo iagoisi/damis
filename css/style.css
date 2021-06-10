@@ -107,7 +107,7 @@ form input {
   height: 77px;
 }
 
-form input::placeholder {
+#form input::placeholder {
   font-family: Roboto;
   display: flex;
   text-align: center;
@@ -117,14 +117,14 @@ form input::placeholder {
   letter-spacing: .2rem;
 }
 
-form span.error {
+#form span.error {
   display: none;
   font-size: 1.4rem;
   color: red;
 }
 
-form span.error.active::before {
-  display: flex;
+#form span.error::before {
+  display: none;
   content: "";
   width: 6px;
   height: 6px;
@@ -135,8 +135,12 @@ form span.error.active::before {
   animation: span 1s forwards;
 }
 
+#form span.error.active::before {
+  display: flex;
+}
 
-form span.error.active {
+
+#form span.error.active {
   display: flex;
   border-radius: 5px;
   padding: 0.8rem;

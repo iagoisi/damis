@@ -33,7 +33,6 @@ function customValidation(event) {
             spanError.classList.add('active');
         } else {
             spanError.classList.remove('active');
-            spanError.innerHTML = '';
         }
 }
 
