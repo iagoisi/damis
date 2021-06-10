@@ -490,10 +490,9 @@ button:hover {
     align-items: center;
   }
 
-
-.section_03 .description_expert h2 {
-  text-align: center;
-}
+  .section_03 .description_expert h2 {
+    text-align: center;
+  }
 
   .section_03 .description_expert p {
     text-align: center;
