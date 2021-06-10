@@ -1,9 +1,9 @@
 const fields =  document.querySelectorAll('[required]');
 
 const form = document.getElementById('form');
-const url = "https://clientapi.benchmarkemail.com/Contact/18424098/ContactDetails";
+const url = "https://clientapi.benchmarkemail.com/Contact/18442542/ContactDetails";
 const myHeaders = new Headers();
-myHeaders.append("AuthToken", "830B98D7-CD9E-43B4-BA38-F181169495B1");
+myHeaders.append("AuthToken", "993C674A-9EAB-4EEF-8B36-46A42E26C3AA");
 myHeaders.append("Content-Type", "application/json");
 
 function customValidation(event) {
@@ -46,33 +46,42 @@ form.addEventListener('submit', event => {
     event.preventDefault();
     console.log("Cheguei aqui!")
 
-    // let email = document.getElementById('emailInput').value;
-    // let data = {
-    //     "Data": {"Email": `${email}`,
-    //     "FirstName": null, 
-    //     "LastName": null, 
-    //     "EmailPerm": "1"
-    //     }
-    // }    
+    fetch("https://clientapi.benchmarkemail.com/Contact/", {
+      headers: myHeaders,
+      method: 'GET',
+      redirect: 'follow'
+    })
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 
-    // fetch ("https://restapi.benchmarkemail.com/Emails/", { 
-    //     headers: myHeaders,
-    // })
-    // // .then(response => response.json())
-    // // .then(result => console.log(result))
-    // // .catch(error => console.log('error', error));
+    let email = document.getElementById('emailInput').value;
+    let data = {
+        "Data": {"Email": `${email}`,
+        "FirstName": null, 
+        "LastName": null, 
+        "EmailPerm": "1"
+        }
+    }    
 
-
-    // fetch (url, {
-    //     method: "POST",
-    //     headers: myHeaders,
-    //     // redirect: 'follow',
-    //     body: JSON.stringify(data),
-    // })
-    // // .then(response => response.json())
-    // // .then(result => console.log(result))
-    // .then(result => window.location.href = "./obrigado.html")
+    fetch ("https://restapi.benchmarkemail.com/Emails/", { 
+        headers: myHeaders,
+    })
+    // .then(response => response.json())
+    // .then(result => console.log(result))
     // .catch(error => console.log('error', error));
+
+
+    fetch (url, {
+        method: "POST",
+        headers: myHeaders,
+        // redirect: 'follow',
+        body: JSON.stringify(data),
+    })
+    // .then(response => response.json())
+    // .then(result => console.log(result))
+    .then(result => window.location.href = "./obrigado.html")
+    .catch(error => console.log('error', error));
 })
 ;
 
