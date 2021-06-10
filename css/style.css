@@ -140,8 +140,9 @@ button:hover {
   box-shadow: #333;
 }
 
-/* ---------- SECTION_01 ---------- */
 
+
+/* ---------- SECTION_01 ---------- */
 
 .section_01 {
   display: flex;
@@ -187,6 +188,7 @@ button:hover {
   display: flex;
   justify-content: flex-start;
 }
+
 
 
 /* ---------- SECTION_02 ---------- */
@@ -236,6 +238,7 @@ button:hover {
 }
 
 
+
 /* ---------- SECTION_03 ---------- */
 
 .section_03 {
@@ -254,24 +257,6 @@ button:hover {
 }
 
 
-.section_03 .description_expert h2 {
-  font-weight: 500;
-  font-size: 3.6rem;
-  margin-bottom: 2rem;
-}
-
-.section_03 .description_expert {
-  display: flex;
-  align-items: center;
-}
-
-.section_03 .description_consult p {
-  font-size: 1.8rem;
-  color: var(--subtitle-and-desctiption);
-  max-width: 400px;
-  line-height: 3.4rem;
-}
-
 .section_03 .description_expert::before {
   display: block;
   content: "";
@@ -281,8 +266,27 @@ button:hover {
   margin-right: 6rem;
 }
 
+.section_03 .description_expert {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.section_03 .description_expert div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section_03 .description_expert h2 {
+  font-weight: 500;
+  font-size: 3.6rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
 .section_03 .description_expert p {
-  max-width: 290px;
+  max-width: 350px;
   font-size: 2.2rem;
   color: var(--subtitle-and-desctiption);
   line-height: 3.4rem;
@@ -323,7 +327,6 @@ button:hover {
   color: var(--color-white);
 }
 
-
 .business_group_01 {
   display: flex;
   width: 90%;
@@ -359,8 +362,6 @@ button:hover {
 .business_group_01 div:nth-child(4) img {
   width: 40%;
 }
-
-
 
 .business_group_02 {
   display: flex;
@@ -400,6 +401,7 @@ button:hover {
 
 
 /* ---------- LOGO ---------- */
+
 .logo {
   display: flex;
   justify-content: center;
@@ -410,6 +412,7 @@ button:hover {
   width: 300px;
 
 }
+
 
 
 /* ---------- celular e IPad ---------- */
@@ -466,11 +469,15 @@ button:hover {
     justify-content: center;
   }
 
-/* ---------- SECTION_02 ---------- */
+
+
+/* ---------- SECTION_01 ---------- */
 
   .section_01 p {
     max-width: 90%;
   }
+
+
 
 /* ---------- SECTION_02 ---------- */
 
@@ -478,43 +485,40 @@ button:hover {
     width: 90%;
   }
 
+
+
 /* ---------- SECTION_03 ---------- */
 
   .section_03 {
     flex-direction: column;
   }
 
-  .section_03 .description_expert {
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .section_03 .description_expert div {
-    justify-content: center;
-  }
-
-  .section_03 .description_expert h2 {
-    text-align: center;
-  }
-
-  .section_03 .description_expert p {
-    text-align: center;
-    max-width: 600px;
-    margin-bottom: 4rem;
-
-  }
-
   .section_03 .description_consult p {
     margin-bottom: 9rem;
+    max-width: 100%;
   }
 
   .section_03 .description_expert::before {
     display: none;
   }
+    
+  .section_03 .description_expert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section_03 .description_expert div p {
+    text-align: center;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+
 
 /* ---------- SECTION_04 ---------- */
-
 
   .business_group_01 {
     margin: 0 auto;
@@ -527,6 +531,5 @@ button:hover {
     justify-content: center;
 
   }
-
 
 }
