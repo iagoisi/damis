@@ -39,9 +39,11 @@
         <h2>Faça seu cadastro abaixo e ganhe uma <span>consulturia gratuita de 30 minutos</span> com um de nossos especialistas.</h2>
       </div>
 
-      <form action="">
-        <input type="email" placeholder="Insira seu melhor e-mail">
-        <button>Fazer meu cadastro</button>
+      <form id="form">
+        <label for="e-mail"></label>
+        <input type="email" placeholder="Insira seu melhor e-mail" pattern="[a-zA-Z0-9\.\-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+        <span class="error">Digite um e-mail válido.</span>
+        <button type="submit" id="button">Fazer meu cadastro</button>
       </form>
 
     </div>
@@ -149,6 +151,6 @@
     <img src="./img/logo.svg" alt="">
   </div>
   
-  
+  <script src="./js/script.js"></script>
 </body>
 </html>

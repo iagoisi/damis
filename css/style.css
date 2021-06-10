@@ -117,6 +117,42 @@ form input::placeholder {
   letter-spacing: .2rem;
 }
 
+form span.error {
+  display: none;
+  font-size: 1.4rem;
+  color: red;
+}
+
+form span.error.active::before {
+  display: flex;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: red;
+  align-self: center;
+  margin-right: 5px;
+  animation: span 1s forwards;
+}
+
+
+form span.error.active {
+  display: flex;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  animation: span 1s forwards;
+}
+
+@keyframes span {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 input:hover {
   border: solid 3px #00639A;
 }
@@ -134,10 +170,11 @@ button {
   letter-spacing: .2rem;
   background: #00639A;
   color: white;
+  margin-top: 1rem;
 }
 
 button:hover {
-  box-shadow: #333;
+  box-shadow: 0 0 1em var(--dark-blue);
 }
 
 
@@ -452,9 +489,6 @@ button:hover {
     margin-bottom: 1rem;
   }
 
-  form input {
-    margin-bottom: 1rem;
-  }
 
   .intro .schadule_2 {
     justify-content: center;
