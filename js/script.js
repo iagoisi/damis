@@ -46,14 +46,14 @@ form.addEventListener('submit', event => {
     event.preventDefault();
     console.log("Cheguei aqui!")
 
-    fetch("https://clientapi.benchmarkemail.com/Contact/", {
-      headers: myHeaders,
-      method: 'GET',
-      redirect: 'follow'
-    })
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+    // fetch("https://clientapi.benchmarkemail.com/Contact/", {
+    //   headers: myHeaders,
+    //   method: 'GET',
+    //   redirect: 'follow'
+    // })
+    // .then(response => response.text())
+    // .then(result => console.log(result))
+    // .catch(error => console.log('error', error));
 
     let email = document.getElementById('emailInput').value;
     let data = {
