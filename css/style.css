@@ -257,7 +257,6 @@ button:hover {
 .section_03 .description_expert h2 {
   font-weight: 500;
   font-size: 3.6rem;
-  max-width: 500px;
   margin-bottom: 2rem;
 }
 
@@ -491,9 +490,13 @@ button:hover {
   }
 
 
-.section_03 .description_expert h2 {
-  text-align: center;
-}
+  .section_03 .description_expert div {
+    justify-content: center;
+  }
+
+  .section_03 .description_expert h2 {
+    text-align: center;
+  }
 
   .section_03 .description_expert p {
     text-align: center;
