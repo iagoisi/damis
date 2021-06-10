@@ -256,12 +256,6 @@ button:hover {
   margin-bottom: 2rem;
 }
 
-.section_03 .description_consult p {
-  font-size: 2rem;
-  color: var(--subtitle-and-desctiption);
-  max-width: 400px;
-  line-height: 3.4rem;
-}
 
 .section_03 .description_expert::before {
   display: block;
@@ -513,16 +507,6 @@ button:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-  }
-
-  .section_03 .description_expert div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .section_03 .description_expert div h2 {
-    max-width: 100%;
-    text-align: center;
   }
 
   .section_03 .description_expert div p {
