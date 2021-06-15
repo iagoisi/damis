@@ -84,3 +84,42 @@ form.addEventListener('submit', event => {
 })
 ;
 
+
+
+let lgpdHtml = `
+    <div class="lgpd_banner">
+        
+    <div class="lgpd_banner_left">
+    Nós ultilizamos cookies para melhorar sua experiência em nosso site. Para conferir detalhes sobre os cookies utilizados, leia nossas <a target="blanck" href="https://damisconsultoria.com.br/politicas-de-privacidade">políticas de privacidade.</a>
+    </div>
+
+    <div class="lgpd_banner_right">
+    <button>OK</button>
+    </div>
+
+    </div>
+`;
+
+let lsContent = localStorage.getItem('lgpd');
+if (!lsContent) {
+    document.body.innerHTML += lgpdHtml;
+
+    let lgpdArea = document.querySelector('.lgpd_banner');
+    let lgpdButton = lgpdArea.querySelector('button');
+
+    lgpdButton.addEventListener('click', () => {
+        lgpdArea.remove();
+        localStorage.setItem('lgpd', 'aceito os cookies');
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
