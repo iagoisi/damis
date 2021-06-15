@@ -3,6 +3,7 @@
   --subtitle-and-desctiption: #999;
   --dark-blue: #1B476B;
   --color-background-card: #EBEBEB;
+  --color-ok: rgba(30, 255, 0, 0.685);
   --color-white: #fff;
   font-size: 62.5%;
 
@@ -35,6 +36,7 @@ html::before {
 a {
   cursor: pointer;
   text-decoration: none;
+  /* color: black; */
 }
 
 img {
@@ -603,4 +605,58 @@ button:hover {
 
   }
 
+}
+
+
+
+
+
+/* ---------- LGPD BANNER ---------- */
+
+
+
+.lgpd_banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  font-size: 1.5rem;
+  background: var(--dark-blue);
+  opacity: .92;
+}
+
+.lgpd_banner_left {
+  color: white;
+  max-width: 70%;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 700px) {
+  .lgpd_banner_left {
+    max-width: 45%;
+  }
+}
+
+.lgpd_banner_left a {
+  color: var(--subtitle-and-desctiption);
+  cursor: pointer;
+}
+
+.lgpd_banner_right button {
+  background: var(--color-background-card);
+  color: var(--dark-blue);
+  width: 80px;
+  height: 50px;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.lgpd_banner_right button:hover {
+  background: var(--color-ok);
+  cursor: pointer;
 }
