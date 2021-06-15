@@ -32,6 +32,11 @@ html::before {
 
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -138,7 +143,6 @@ form input {
 #form span.error.active::before {
   display: flex;
 }
-
 
 #form span.error.active {
   display: flex;
@@ -447,16 +451,29 @@ button:hover {
 
 
 
-/* ---------- LOGO ---------- */
+/* ---------- FOOTER ---------- */
 
-.logo {
+.footer {
   display: flex;
-  justify-content: center;
-  margin-bottom: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  /* margin-bottom: 10rem; */
+  background: var(--dark-blue);
 }
 
-.logo img {
-  width: 300px;
+.footer p {
+  color: #FFF;
+  font-size: 1.3rem;
+}
+
+.footer a p:hover {
+  color: var(--subtitle-and-desctiption);
+  font-size: 1.3rem;
+}
+
+.footer img {
+  width: 15rem;
 
 }
 
