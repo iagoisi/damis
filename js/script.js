@@ -44,7 +44,7 @@ for ( const field of fields ) {
 form.addEventListener('submit', event => {
 
     event.preventDefault();
-    console.log("Cheguei aqui!")
+    // console.log("Cheguei aqui!")
 
     // fetch("https://clientapi.benchmarkemail.com/Contact/", {
     //   headers: myHeaders,
@@ -70,7 +70,6 @@ form.addEventListener('submit', event => {
     // .then(response => response.json())
     // .then(result => console.log(result))
     // .catch(error => console.log('error', error));
-
 
     fetch (url, {
         method: "POST",
