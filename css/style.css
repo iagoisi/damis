@@ -637,6 +637,7 @@ button:hover {
 }
 
 @media (min-width: 700px) {
+
   .lgpd_banner_left {
     max-width: 45%;
   }
@@ -659,4 +660,15 @@ button:hover {
 .lgpd_banner_right button:hover {
   background: var(--color-ok);
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .lgpd_banner {
+    font-size: 1rem;
+    /* flex-direction: column; */
+  }
+  /* .lgpd_banner_left {
+    max-width: 100%;
+  } */
+
 }
